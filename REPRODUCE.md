@@ -63,8 +63,8 @@ released artifact; please report the failing line.
 | `rq1/rq1_stats_dyn.json` | `rq1_stats_dyn.json` | RQ1 interaction, dynamic API |
 | `rq1/rq1_stats_str.json` | `rq1_stats_str.json` | RQ1 interaction, string mapping |
 | `rq1/rq1_stats_rename.json` | `rq1_stats_rename.json` | RQ1 rename-only control |
-| `rq3/rq3_stats_main.json` | `rq3_stats_main.json` | RQ3 primary (n=30) |
-| `rq3/rq3_stats_main_n28.json` | `rq3_stats_main_n28.json` | RQ3 sensitivity (n=28) |
+| `rq3/rq3_stats_main_n28.json` | `rq3_stats_main_n28.json` | RQ3 prespecified primary (n=28) |
+| `rq3/rq3_stats_main.json` | `rq3_stats_main.json` | RQ3 all-30 sensitivity (n=30) |
 | `rq3/rq3_stats_aux.json` | `rq3_stats_aux.json` | RQ3 auxiliary paths |
 | `real/real_stats.json` | `real_stats.json` | real-source cohort C0–C4 |
 | `w01/w01_stats.json` | `w01_stats.json` | source protection |
@@ -107,8 +107,10 @@ round and by `code/recompute_historical.py` for the historical cohorts.
   is `data/manifests/rename_applicable_benign.txt`. The other 14 are counted as
   `not_applicable`, not as missing.
 - **RQ3 n=28.** `data/results/verdicts/rq3_verdicts_n28.csv` is the frozen table with
-  the two excluded programs removed. `run_all.py` recomputes the statistics from
-  that table; the n=30 table is rebuilt from raw responses.
+  the two excluded programs removed; it is the **prespecified main analysis**,
+  because those two programs already expose partial API identities. `run_all.py`
+  recomputes the statistics from that table; the n=30 all-program table is rebuilt
+  from raw responses and is the sensitivity analysis.
 - **REAL C4.** C4 is not a separate model call. For eight projects the C4 input
   SHA-256 equals C0, so C4 verdicts are copied from C0 by
   `code/merge_real_reuse.py` using `data/manifests/real_reuse_source.csv`.

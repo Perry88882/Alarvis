@@ -76,18 +76,22 @@ retries by strict majority. `experiments/cohorts.md` gives the condition definit
 |---|---|
 | α false-alarm increase, H1→H4 | +66.4 pp (mean over 9 models; sd 12.4) |
 | RQ1 four-cell interaction (n=40) | Δ = +27.5 pp, 95% CI [12.5, 42.5], sign-test p = 0.0034 |
-| RQ3 E0→ES (n=30) | 14/30 → 4/30, McNemar p = 0.00195, Holm p = 0.0039 |
-| RQ3 E0→ESA (n=30) | 14/30 → 3/30, McNemar p = 0.00098, Holm p = 0.0029 |
+| RQ3 E0→ES (n=28, primary) | 12/28 → 4/28, McNemar p = 0.0078, Holm p = 0.0156 |
+| RQ3 E0→ESA (n=28, primary) | 12/28 → 3/28, McNemar p = 0.0039, Holm p = 0.0117 |
 | REAL C0→C3 | 0/8 → 8/8, p = 0.0078, Holm p = 0.031 |
 | REAL C3→C4 | 8/8 → 0/8, p = 0.0078, Holm p = 0.031 |
 | MECH B vs C (30 programs) | 28/30 vs 0/30, exact McNemar p = 7.45 × 10⁻⁹ |
 | W01 Gemini clean vs protected | 0/10 vs 3/10, p = 0.25 (Holm 0.5) |
 | M03 DeepSeek B vs C | 9 vs 0 discordant programs, p = 0.0039 |
 
-The RQ3 sensitivity analysis excludes two programs whose API state was partly
-visible to the model; the frozen `n=28` table is included as
-`data/results/verdicts/rq3_verdicts_n28.csv`. The four-project RTM trial is descriptive
-only: with at most four pairs, the smallest attainable two-sided p is 0.125.
+The RQ3 **prespecified main analysis** excludes two programs whose API state was
+partly visible to the model; the frozen `n=28` table is
+`data/results/verdicts/rq3_verdicts_n28.csv` and the headline rows above use it.
+The all-30 set is the sensitivity analysis (E0/ES/EA/ESA = 14/4/18/3 alarms;
+Holm p = 0.0039, 0.1250, 0.0029) and is reported in the manuscript appendix; its
+statistics are `data/results/summaries/rq3_stats_main.json`. The four-project RTM
+trial is descriptive only: with at most four pairs, the smallest attainable
+two-sided p is 0.125.
 
 ## Prompt and model access
 

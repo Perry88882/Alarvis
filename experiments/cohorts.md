@@ -176,6 +176,11 @@ Path B, source-level non-decryption helper:
 Primary contrasts: `ES`, `EA`, `ESA` vs `E0` (Holm over three). Auxiliary:
 `ST` vs `SN`, plus `S0` as the source-level floor.
 
+The prespecified main set for Path A is `n=28`: two programs, `b02_file_copy`
+and `b30_reg_backup`, already expose partial API identities in the input, so
+their `EA` edit could not fully control what the model saw. The all-30 counts
+are the sensitivity analysis (manuscript Appendix B).
+
 ## REAL (`real`)
 
 - 8 real benign projects, 4 administered conditions, 3 repetitions, one model

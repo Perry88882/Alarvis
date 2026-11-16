@@ -67,7 +67,8 @@ def main():
             "--out", os.path.join(OUT, "rq1", "rq1_stats_%s.json" % tag),
             *extra)
 
-    # 4. RQ3 recovery paths: primary (n=30), sensitivity (n=28), auxiliary.
+    # 4. RQ3 recovery paths: all-30 sensitivity (n=30), prespecified primary
+    #    (n=28), auxiliary.
     run("stats_paired.py",
         "--verdicts", os.path.join(OUT, "rq3", "rq3_verdicts.csv"),
         "--queue", "RQ3", "--pairs", "E0:ES,E0:EA,E0:ESA",
