@@ -1,0 +1,74 @@
+[
+  {
+    "base": "C0",
+    "target": "C1",
+    "n": 8,
+    "base_rate": 0.0,
+    "target_rate": 0.0,
+    "diff_pp": 0.0,
+    "ci_pp": [
+      0.0,
+      0.0
+    ],
+    "both0": 8,
+    "both1": 0,
+    "new_alarm": 0,
+    "resolved": 0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "base": "C0",
+    "target": "C2",
+    "n": 8,
+    "base_rate": 0.0,
+    "target_rate": 0.0,
+    "diff_pp": 0.0,
+    "ci_pp": [
+      0.0,
+      0.0
+    ],
+    "both0": 8,
+    "both1": 0,
+    "new_alarm": 0,
+    "resolved": 0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "base": "C0",
+    "target": "C3",
+    "n": 8,
+    "base_rate": 0.0,
+    "target_rate": 100.0,
+    "diff_pp": 100.0,
+    "ci_pp": [
+      100.0,
+      100.0
+    ],
+    "both0": 0,
+    "both1": 0,
+    "new_alarm": 8,
+    "resolved": 0,
+    "p": 0.0078125,
+    "p_holm": 0.03125
+  },
+  {
+    "base": "C3",
+    "target": "C4",
+    "n": 8,
+    "base_rate": 100.0,
+    "target_rate": 0.0,
+    "diff_pp": -100.0,
+    "ci_pp": [
+      -100.0,
+      -100.0
+    ],
+    "both0": 0,
+    "both1": 0,
+    "new_alarm": 0,
+    "resolved": 8,
+    "p": 0.0078125,
+    "p_holm": 0.03125
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "queue": "RQ1",
+  "label": "benign",
+  "cells": [
+    "S0",
+    "D0",
+    "St_rename",
+    "Dt_rename"
+  ],
+  "n": 26,
+  "dropped": 0,
+  "not_applicable": 14,
+  "counts": {
+    "S0": 0,
+    "D0": 1,
+    "St_rename": 1,
+    "Dt_rename": 1
+  },
+  "rates": {
+    "S0": 0.0,
+    "D0": 0.038461538461538464,
+    "St_rename": 0.038461538461538464,
+    "Dt_rename": 0.038461538461538464
+  },
+  "delta_pp": -3.8461538461538463,
+  "ci_pp": [
+    -11.538461538461538,
+    0.0
+  ],
+  "d_pos": 0,
+  "d_zero": 25,
+  "d_neg": 1,
+  "p_sign": 1.0,
+  "seed": 20261104,
+  "bootstrap": 10000,
+  "transitions": {
+    "0000": 25,
+    "0111": 1
+  }
+}

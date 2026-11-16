@@ -1,0 +1,417 @@
+{
+ "phase": "rtm",
+ "unit": "project",
+ "rule": "3 repeats per cell; >=2 valid votes and strict majority; otherwise undetermined",
+ "cells": {
+  "zlib/R0": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "zlib/R1": {
+   "determined": false,
+   "n_valid": 0,
+   "votes": [],
+   "source": "not_administered",
+   "note": "input identical to R0; the rename never reached the build"
+  },
+  "zlib/R3": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "malicious"
+   ],
+   "source": "w01"
+  },
+  "zlib/R4": {
+   "determined": true,
+   "verdict": "malicious",
+   "n_valid": 3,
+   "votes": [
+    "malicious",
+    "malicious",
+    "malicious"
+   ],
+   "source": "rtm"
+  },
+  "zlib/C1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "cjson/R0": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "cjson/R1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "cjson/R3": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "malicious",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "cjson/R4": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "cjson/C1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "md4c/R0": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "md4c/R1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "md4c/R3": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "md4c/R4": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "md4c/C1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "libpng/R0": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "libpng/R1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "libpng/R3": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "w01"
+  },
+  "libpng/R4": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "malicious",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  },
+  "libpng/C1": {
+   "determined": true,
+   "verdict": "benign",
+   "n_valid": 3,
+   "votes": [
+    "benign",
+    "benign",
+    "benign"
+   ],
+   "source": "rtm"
+  }
+ },
+ "per_cond": {
+  "R0": {
+   "projects_in_scope": 4,
+   "denominator_determined": 4,
+   "malicious": 0,
+   "rate_pct": 0.0,
+   "wilson95": [
+    0.0,
+    49.0
+   ]
+  },
+  "R1": {
+   "projects_in_scope": 3,
+   "denominator_determined": 3,
+   "malicious": 0,
+   "rate_pct": 0.0,
+   "wilson95": [
+    0.0,
+    56.1
+   ]
+  },
+  "R3": {
+   "projects_in_scope": 4,
+   "denominator_determined": 4,
+   "malicious": 0,
+   "rate_pct": 0.0,
+   "wilson95": [
+    0.0,
+    49.0
+   ]
+  },
+  "R4": {
+   "projects_in_scope": 4,
+   "denominator_determined": 4,
+   "malicious": 1,
+   "rate_pct": 25.0,
+   "wilson95": [
+    4.6,
+    69.9
+   ]
+  },
+  "C1": {
+   "projects_in_scope": 4,
+   "denominator_determined": 4,
+   "malicious": 0,
+   "rate_pct": 0.0,
+   "wilson95": [
+    0.0,
+    49.0
+   ]
+  }
+ },
+ "paired": {
+  "R1_vs_R0": {
+   "n_pairs": 3,
+   "b": 0,
+   "c": 0,
+   "p_two_sided": 1.0,
+   "min_achievable_p": null,
+   "pairs": [
+    {
+     "project": "cjson",
+     "R1": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "md4c",
+     "R1": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "libpng",
+     "R1": "benign",
+     "R0": "benign"
+    }
+   ]
+  },
+  "R3_vs_R0": {
+   "n_pairs": 4,
+   "b": 0,
+   "c": 0,
+   "p_two_sided": 1.0,
+   "min_achievable_p": null,
+   "pairs": [
+    {
+     "project": "zlib",
+     "R3": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "cjson",
+     "R3": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "md4c",
+     "R3": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "libpng",
+     "R3": "benign",
+     "R0": "benign"
+    }
+   ]
+  },
+  "R4_vs_R0": {
+   "n_pairs": 4,
+   "b": 1,
+   "c": 0,
+   "p_two_sided": 1.0,
+   "min_achievable_p": 1.0,
+   "pairs": [
+    {
+     "project": "zlib",
+     "R4": "malicious",
+     "R0": "benign"
+    },
+    {
+     "project": "cjson",
+     "R4": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "md4c",
+     "R4": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "libpng",
+     "R4": "benign",
+     "R0": "benign"
+    }
+   ]
+  },
+  "C1_vs_R0": {
+   "n_pairs": 4,
+   "b": 0,
+   "c": 0,
+   "p_two_sided": 1.0,
+   "min_achievable_p": null,
+   "pairs": [
+    {
+     "project": "zlib",
+     "C1": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "cjson",
+     "C1": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "md4c",
+     "C1": "benign",
+     "R0": "benign"
+    },
+    {
+     "project": "libpng",
+     "C1": "benign",
+     "R0": "benign"
+    }
+   ]
+  },
+  "C1_vs_R3": {
+   "n_pairs": 4,
+   "b": 0,
+   "c": 0,
+   "p_two_sided": 1.0,
+   "min_achievable_p": null,
+   "pairs": [
+    {
+     "project": "zlib",
+     "C1": "benign",
+     "R3": "benign"
+    },
+    {
+     "project": "cjson",
+     "C1": "benign",
+     "R3": "benign"
+    },
+    {
+     "project": "md4c",
+     "C1": "benign",
+     "R3": "benign"
+    },
+    {
+     "project": "libpng",
+     "C1": "benign",
+     "R3": "benign"
+    }
+   ]
+  }
+ }
+}

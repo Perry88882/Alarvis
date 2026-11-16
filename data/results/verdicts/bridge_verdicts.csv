@@ -1,0 +1,9 @@
+cohort,program,label,condition,model,n_rows,n_valid,n_mal,n_ben,verdict,status
+bridge,bzip2,benign,clean,deepseek,2,2,0,2,benign,ok
+bridge,bzip2,benign,clean,gemini,2,2,0,2,benign,ok
+bridge,bzip2,benign,protected,deepseek,2,2,1,1,,tie
+bridge,bzip2,benign,protected,gemini,2,2,0,2,benign,ok
+bridge,lua,benign,clean,deepseek,2,2,0,2,benign,ok
+bridge,lua,benign,clean,gemini,2,2,0,2,benign,ok
+bridge,lua,benign,protected,deepseek,2,2,1,1,,tie
+bridge,lua,benign,protected,gemini,2,2,1,1,,tie

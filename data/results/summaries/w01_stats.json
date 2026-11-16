@@ -1,0 +1,256 @@
+{
+ "n_raw_rows": 144,
+ "terminal": {},
+ "models": {
+  "deepseek": {
+   "all": {
+    "n": 12,
+    "clean_mal": 0,
+    "prot_mal": 2,
+    "both_mal": 0,
+    "both_ben": 10,
+    "b_only_prot": 2,
+    "c_only_clean": 0,
+    "unknown": 0,
+    "p_exact": 0.5
+   },
+   "main10": {
+    "n": 10,
+    "clean_mal": 0,
+    "prot_mal": 1,
+    "both_mal": 0,
+    "both_ben": 9,
+    "b_only_prot": 1,
+    "c_only_clean": 0,
+    "unknown": 0,
+    "p_exact": 1.0,
+    "p_holm": 1.0
+   },
+   "projects": [
+    {
+     "project": "bzip2",
+     "pilot_overlap": true,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "malicious",
+     "prot_valid": 3
+    },
+    {
+     "project": "cjson",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "inih",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "libpng",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "libyaml",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "lua",
+     "pilot_overlap": true,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "lz4",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "md4c",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "miniz",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "utf8proc",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "yyjson",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "malicious",
+     "prot_valid": 3
+    },
+    {
+     "project": "zlib",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    }
+   ],
+   "input_tokens": 470850
+  },
+  "gemini": {
+   "all": {
+    "n": 12,
+    "clean_mal": 0,
+    "prot_mal": 4,
+    "both_mal": 0,
+    "both_ben": 8,
+    "b_only_prot": 4,
+    "c_only_clean": 0,
+    "unknown": 0,
+    "p_exact": 0.125
+   },
+   "main10": {
+    "n": 10,
+    "clean_mal": 0,
+    "prot_mal": 3,
+    "both_mal": 0,
+    "both_ben": 7,
+    "b_only_prot": 3,
+    "c_only_clean": 0,
+    "unknown": 0,
+    "p_exact": 0.25,
+    "p_holm": 0.5
+   },
+   "projects": [
+    {
+     "project": "bzip2",
+     "pilot_overlap": true,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "cjson",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "inih",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "libpng",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "malicious",
+     "prot_valid": 3
+    },
+    {
+     "project": "libyaml",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "lua",
+     "pilot_overlap": true,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "malicious",
+     "prot_valid": 3
+    },
+    {
+     "project": "lz4",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "md4c",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "miniz",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "utf8proc",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "benign",
+     "prot_valid": 3
+    },
+    {
+     "project": "yyjson",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "malicious",
+     "prot_valid": 3
+    },
+    {
+     "project": "zlib",
+     "pilot_overlap": false,
+     "clean": "benign",
+     "clean_valid": 3,
+     "prot": "malicious",
+     "prot_valid": 3
+    }
+   ],
+   "input_tokens": 470850
+  }
+ },
+ "n_projects": 12,
+ "pending": false
+}

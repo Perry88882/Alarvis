@@ -1,0 +1,56 @@
+[
+  {
+    "base": "S0",
+    "target": "ST",
+    "n": 30,
+    "base_rate": 0.0,
+    "target_rate": 3.3333333333333335,
+    "diff_pp": 3.3333333333333335,
+    "ci_pp": [
+      0.0,
+      10.0
+    ],
+    "both0": 29,
+    "both1": 0,
+    "new_alarm": 1,
+    "resolved": 0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "base": "S0",
+    "target": "SN",
+    "n": 30,
+    "base_rate": 0.0,
+    "target_rate": 0.0,
+    "diff_pp": 0.0,
+    "ci_pp": [
+      0.0,
+      0.0
+    ],
+    "both0": 30,
+    "both1": 0,
+    "new_alarm": 0,
+    "resolved": 0,
+    "p": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "base": "SN",
+    "target": "ST",
+    "n": 30,
+    "base_rate": 0.0,
+    "target_rate": 3.3333333333333335,
+    "diff_pp": 3.3333333333333335,
+    "ci_pp": [
+      0.0,
+      10.0
+    ],
+    "both0": 29,
+    "both1": 0,
+    "new_alarm": 1,
+    "resolved": 0,
+    "p": 1.0,
+    "p_holm": 1.0
+  }
+]
